@@ -22,9 +22,11 @@ import {
   AppModals,
   AppText,
   AppTextField,
+  LinkingView,
   UseEffectView,
   UseStateView,
 } from './src/components';
+import {Photo} from './src/assets/images';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -40,14 +42,16 @@ function App(): React.JSX.Element {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       <View style={styles.container}>
-        {/* <AppText />
-        <AppButton />
-        <AppImage />
-        <AppTextField /> */}
+        {/* <AppText /> */}
+        {/* <AppButton /> */}
+        {/* <AppImage /> */}
+        <Photo />
+        {/* <AppTextField />  */}
         {/* <UseStateView /> */}
         {/* <UseEffectView /> */}
         {/* <AppFlatListView /> */}
-        <AppModals/>
+        {/* <AppModals/> */}
+        {/* <LinkingView /> */}
       </View>
     </SafeAreaView>
   );

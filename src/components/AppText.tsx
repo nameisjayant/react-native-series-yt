@@ -1,4 +1,5 @@
 import {StyleSheet, Text} from 'react-native';
+import {AppFonts} from '../config/fonts';
 
 const AppText = () => {
   return <Text style={styles.text}>{'Hello world'}</Text>;
@@ -8,7 +9,7 @@ const styles = StyleSheet.create({
   text: {
     color: 'red',
     fontSize: 30,
-    fontWeight: 600,
+    fontFamily: AppFonts[800],
   },
 });
 

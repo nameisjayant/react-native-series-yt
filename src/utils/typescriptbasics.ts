@@ -1,64 +1,70 @@
+// variable
+const name = 'jayant';
 
-// variable 
-const name = "jayant"
-let age = 25
-age = 26
+let age = 25;
+age = 26;
 
-var name1 = "john"
+var name1 = 'john';
 
-let names:string[] = ['jayant','hjkdd']
+function test_2() {
+  if (true) {
+    var x = 10;
+  }
+  console.log(x)
+}
 
-// data types 
+let names: string[] = ['jayant', 'hjkdd'];
 
-let value:number = 10
-let address:string = 'Delhi'
-let name2:any  = 10
+// data types
 
-name2 = 'jayant'
+let value: number = 10;
+let address: string = 'Delhi';
+let name2: any = 10;
+
+name2 = 'jayant';
 
 // union
-let name3:string | number
+let name3: string | number;
 
-name3 = 12
-name3 = 'jayant'
+name3 = 12;
+name3 = 'jayant';
 
 // enums
 
 enum Colors {
-    BLUE,
-    Orange
+  BLUE,
+  Orange,
 }
 
-let value1:null = null
-let value3:undefined 
+let value1: null = null;
+let value3: undefined;
 
 // functions
 
-function two(a:number,b:number){
-    console.log(a+b)
+function two(a: number, b: number) {
+  console.log(a + b);
 }
 
-two(1,2) 
+two(1, 2);
 // 3
 
-interface User{
-    name:string,
-    age:number
+interface User {
+  name: string;
+  age: number;
 }
 
 type User1 = {
-    name:string,
-    age:number
+  name: string;
+  age: number;
+};
+
+function four(user: User) {
+  console.log(`${user.name} - ${user.age}`);
 }
 
-function four(user:User){
-    console.log(`${user.name} - ${user.age}`)
+function getFirstIndexValue<T>(data: T[]) {
+  return data[0];
 }
 
-
-function getFirstIndexValue<T>(data:T[]){
-    return data[0]
-}
-
-getFirstIndexValue(['Jyanat','dhhd','hdd'])
-getFirstIndexValue([12,122,12])
+getFirstIndexValue(['Jyanat', 'dhhd', 'hdd']);
+getFirstIndexValue([12, 122, 12]);
