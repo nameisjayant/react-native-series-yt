@@ -26,7 +26,6 @@ import {
   UseEffectView,
   UseStateView,
 } from './src/components';
-import {Photo} from './src/assets/images';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -44,8 +43,7 @@ function App(): React.JSX.Element {
       <View style={styles.container}>
         {/* <AppText /> */}
         {/* <AppButton /> */}
-        {/* <AppImage /> */}
-        <Photo />
+        <AppImage />
         {/* <AppTextField />  */}
         {/* <UseStateView /> */}
         {/* <UseEffectView /> */}

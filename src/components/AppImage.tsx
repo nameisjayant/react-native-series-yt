@@ -11,14 +11,14 @@ const AppImage = () => {
     //   source={require('../assets/images/CalendarIcons.png')}
     //   style={styles.image}
     // />
-    <CloseIcon />
+    <CloseIcon width={100} height={100} color={'black'} />
   );
 };
 
 const styles = StyleSheet.create({
   image: {
-    width: 200,
-    height: 200,
+    width: 100,
+    height: 100,
     // borderRadius: 100,
     // borderWidth: 5,
     // borderColor: 'red',
